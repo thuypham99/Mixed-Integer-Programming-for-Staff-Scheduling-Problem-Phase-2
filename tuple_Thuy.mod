@@ -3,21 +3,6 @@
  * Author: Windows 10
  * Creation Date: Apr 7, 2021 at 3:35:57 PM
  *********************************************/
-//TEST
-//int numEmShiftArea=17;
-//int numDay=7;
-//range Off;
-//range Fiday=1..17;
-//range Thday;
-//range Twday;
-//range Day=1..numDay;
-//range EmShiftArea=1..numEmShiftArea;
-//tuple Schedule{
-//	int Off;
-//	int Day;
-//}
-//setof (Schedule) OffRegister=...;
-//int D[Day]=[12,12,12,12,12,12,12];
 int numEmShiftArea=...;
 int numDay=...;
 tuple Schedule{
@@ -78,6 +63,7 @@ execute SETTING{
 	cplex.epgap=0.001;
 	cplex.tilim=6000;
 }
+//objective function
 maximize sum(<e,d> in OffRegister)(1-X[e][d])+sum(e in Twday,d in 1..6)Y[e][d]+sum(e in Thday,d in 1..5)K[e][d]+sum(e in Fiday,d in 1..2)Z[e][d];
 subject to
 {

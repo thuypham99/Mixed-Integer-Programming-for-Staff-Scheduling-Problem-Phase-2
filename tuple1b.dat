@@ -1,0 +1,40 @@
+/*********************************************
+ * OPL 12.9.0.0 Data
+ * Author: Windows 10
+ * Creation Date: Apr 7, 2021 at 3:35:57 PM
+ *********************************************/
+SheetConnection MyData ("PickingDay.xlsx");
+numEmShiftArea from SheetRead (MyData,"Info!B3");
+numDay from SheetRead (MyData,"Info!B1");
+D from SheetRead (MyData,"Info!B2:H2");
+OffRegister from SheetRead (MyData,"Off!A2:B18");
+
+//SheetConnection MyData ("PickingNight.xlsx");
+//numEmShiftArea from SheetRead (MyData,"Info!B3");
+//numDay from SheetRead (MyData,"Info!B1");
+//D from SheetRead (MyData,"Info!B2:H2");
+//OffRegister from SheetRead (MyData,"Off!A2:B19");
+//
+//SheetConnection MyData ("PackingDay.xlsx");
+//numEmShiftArea from SheetRead (MyData,"Info!B3");
+//numDay from SheetRead (MyData,"Info!B1");
+//D from SheetRead (MyData,"Info!B2:H2");
+//OffRegister from SheetRead (MyData,"Off!A2:B20");
+//
+//SheetConnection MyData ("PackingNight.xlsx");
+//numEmShiftArea from SheetRead (MyData,"Info!B3");
+//numDay from SheetRead (MyData,"Info!B1");
+//D from SheetRead (MyData,"Info!B2:H2");
+//OffRegister from SheetRead (MyData,"Off!A2:B17");
+//
+//SheetConnection MyData ("HandoverDay.xlsx");
+//numEmShiftArea from SheetRead (MyData,"Info!B3");
+//numDay from SheetRead (MyData,"Info!B1");
+//D from SheetRead (MyData,"Info!B2:H2");
+//OffRegister from SheetRead (MyData,"Off!A2:B16");
+//
+//SheetConnection MyData ("HandoverNight.xlsx");
+//numEmShiftArea from SheetRead (MyData,"Info!B3");
+//numDay from SheetRead (MyData,"Info!B1");
+//D from SheetRead (MyData,"Info!B2:H2");
+//OffRegister from SheetRead (MyData,"Off!A2:B16");
